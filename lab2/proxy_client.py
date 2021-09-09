@@ -61,7 +61,6 @@ def main():
 
         # send the data and shutdown
         send_data(s, payload)
-        s.shutdown(socket.SHUT_WR)
 
         # continue accepting data until no more left
         full_data = s.recv(buffer_size)
@@ -70,6 +69,7 @@ def main():
         print(e)
     finally:
         # always close at the end!
+        s.shutdown(socket.SHUT_WR)
         s.close()
 
 
