@@ -9,4 +9,4 @@
         <DT>X: <i>&lt;type 'instance'&gt;</i>
         <DD>MiniFieldStorage('X', 'Y')
     - Shell environment header contains CONTENT_LENGTH and CONTENT_TYPE descriptions, change in remote port and request method (from GET to POST), and UNIQUE_ID is different
-8. 
+8. The raw url: https://gist.githubusercontent.com/shadowciaw/7c2956ab82b26effd5a046b36672558f/raw/4f863687c6443e52c95ab5997fbb91c0d0545154/cmput404lab1.py
