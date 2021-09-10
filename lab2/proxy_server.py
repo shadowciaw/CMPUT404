@@ -93,7 +93,7 @@ def main():
             conn, addr = s.accept()
             print(f"Connected by {addr}")
 
-            p = Process(target=forward, args=(conn))
+            p = Process(target=forward, args=(conn,))
             p.start()
     except Exception as e:
         print("EXCEPTION: ", e)
