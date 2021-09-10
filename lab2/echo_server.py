@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
 import socket
 import time
+from multiprocessing import Process
 
 # define address & buffer size
 HOST = ""
 PORT = 8001
 BUFFER_SIZE = 1024
+
+def recv_data(clientsocket):
+    # recieve data, wait a bit, then send it back
+    full_data = clientsocket.recv(BUFFER_SIZE)
+    print("received data: {full_data}".format(full_data=full_data))
+    time.sleep(0.5)
+    clientsocket.sendall(full_data)
+    clientsocket.close()
+    sys.exit(0)  # kill the child process
 
 
 def main():
@@ -24,13 +34,8 @@ def main():
             conn, addr = s.accept()
             print("Connected by", addr)
 
-            # recieve data, wait a bit, then send it back
-            full_data = conn.recv(BUFFER_SIZE)
-            print("received data: {full_data}".format(full_data=full_data))
-            time.sleep(0.5)
-            conn.sendall(full_data)
-            print("second recv()", conn.recv(BUFFER_SIZE))
-            conn.close()
+            p = Process(target=recv_data, args=conn)
+            p.start()
 
 
 if __name__ == "__main__":
