@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CMPUT404-Project-BetterSocial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/assign1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/assign2/CMPUT404-assignment-web-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/assign3/CMPUT404-assignment-css-hell" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/assign4/CMPUT404-assignment-ajax" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab4/mysite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab5" vcs="Git" />
+  </component>
+</project>

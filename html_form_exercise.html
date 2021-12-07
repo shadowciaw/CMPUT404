@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pizza: HTML Forms</title>
+	</head>
+	<body>
+		<h1>Pizza Cubed</h1>
+		<form method="POST" action="http://webdocs.cs.ualberta.ca/~hindle1/1.py">
+			<label
+				>Pizza size:
+				<select name="size">
+					<option value="s">Small</option>
+					<option value="m">Medium</option>
+					<option value="l">Large</option>
+				</select> </label
+			><br />
+			<label
+				>Pizza Toppings:
+				<label>Pepperoni <input name="pepp" type="checkbox" /></label>
+				<label>Onion <input name="onion" type="checkbox" /></label>
+				<label>Cheese <input name="cheese" type="checkbox" /></label> </label
+			><br />
+			<label>Pizza for (name):<input name="name" /></label><br />
+			<label>Pizza delivered to:<input name="address" /></label><br />
+			<label>Who to call<input type="tel" name="tel" /></label>
+			<input type="Submit" />
+		</form>
+	</body>
+</html>

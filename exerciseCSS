@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Exercise</title>
+    <style>
+      div {
+        border: solid;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 2em;
+        width: 50%;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 40%
+
+      }
+    </style>
+  </head>
+  <body style="background-color: grey; border: black;">
+    <div>
+      Hello World!<br>
+      Fill me in grey
+    </div>
+  </body>
+</html>
